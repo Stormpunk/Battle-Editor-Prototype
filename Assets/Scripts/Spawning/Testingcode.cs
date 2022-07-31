@@ -10,10 +10,14 @@ public class Testingcode : MonoBehaviour
 
     private void Start()
     {
-        SpawnCode.SpawnPlane(plane, 4);
-        for (int i = 0; i < 10; i++)
+        SpawnCode.SpawnPlane(plane, 10);
+        for (int i = 0; i < 100; i++)
         {
-            SpawnCode.SpawnMixed(sideOne, 4);
+            SpawnCode.SpawnMixed(sideOne, 10);
+        }
+        for (int i = 0; i < 100; i++)
+        {
+            SpawnCode.SpawnMixed(sideTwo, 10);
         }
     }
 }
